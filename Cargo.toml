@@ -1,0 +1,13 @@
+[package]
+name = "web_framework"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "myframework_example"
+path = "src/main.rs"
+
+[dependencies]
