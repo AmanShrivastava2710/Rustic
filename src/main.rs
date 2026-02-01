@@ -16,6 +16,15 @@ fn notfound_handler(_req: Request) -> Response {
     Response::text("This route does not exist").status(Status::NotFound)
 }
 
+fn submit_handler(req: Request) -> Response {
+    // Convert body bytes to string
+    let body = String::from_utf8_lossy(&req.body);
+
+    println!("Received POST body: {}", body);
+
+    Response::text(format!("Server received: {}", body)).status(Status::Ok)
+}
+
 fn main() {
     let mut app = App::new();
 
@@ -26,7 +35,7 @@ fn main() {
 
     // Custom 404 route (optional)
     app.get("/404", notfound_handler);
-
+    app.post("/submit", submit_handler);
     // Run your server
     app.run("127.0.0.1:7878");
 }
