@@ -17,14 +17,14 @@ This project demonstrates how to build:
 
 ## Features
 
--   ✅ GET routing
--   ✅ POST routing
--   ✅ Query parameters (`/search?q=rust`)
--   ✅ Request body parsing (Content-Length based)
--   ✅ Custom Response builder
--   ✅ Status enum (200, 404, 400, etc.)
--   ✅ Multi-threaded server
--   ✅ Minimal dependencies (std only)
+-   GET routing
+-   POST routing
+-   Query parameters (`/search?q=rust`)
+-   Request body parsing (Content-Length based)
+-   Custom Response builder
+-   Status enum (200, 404, 400, etc.)
+-   Multi-threaded server
+-   Minimal dependencies (std only)
 
 ------------------------------------------------------------------------
 
