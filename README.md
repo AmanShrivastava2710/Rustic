@@ -36,7 +36,6 @@ This project demonstrates how to build:
      ├── request.rs
      ├── response.rs
      ├── thread_pool.rs
-     ├── status.rs (or inside response.rs)
      ├── lib.rs
      └── main.rs
 
@@ -130,8 +129,11 @@ curl -X POST http://127.0.0.1:7878/login \
   Method   Supported
   -------- -------------------
   GET      Yes
+  
   POST     Yes
+  
   PUT      No (can be added)
+  
   DELETE   No (can be added)
 
 ------------------------------------------------------------------------
