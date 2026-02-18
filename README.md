@@ -57,7 +57,7 @@ This project demonstrates how to build:
 Clone the repository:
 
 ``` bash
-git clone https://github.com/YOUR_USERNAME/Rustic.git
+git clone https://github.com/AmanShrivastava2710/Rustic.git
 cd Rustic
 ```
 
